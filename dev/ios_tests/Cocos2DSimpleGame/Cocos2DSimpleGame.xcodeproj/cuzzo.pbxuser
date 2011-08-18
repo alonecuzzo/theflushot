@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* Cocos2DSimpleGame */ = {
+		activeExec = 0;
+		executables = (
+			8888A3E413FD87B5005023B6 /* Cocos2DSimpleGame */,
+		);
+	};
+	1F3B9A2B0EF2145700286867 /* Cocos2DSimpleGameAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 2002}}";
+			sepNavSelRange = "{545, 0}";
+			sepNavVisRange = "{2188, 1213}";
+		};
+	};
+	1F3B9A2C0EF2145700286867 /* Cocos2DSimpleGameAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 535}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 411}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = 8888A3E413FD87B5005023B6 /* Cocos2DSimpleGame */;
+		activeSDKPreference = iphoneos4.2;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Cocos2DSimpleGame */;
+		codeSenseManager = 8888A3F913FD880E005023B6 /* Code sense */;
+		executables = (
+			8888A3E413FD87B5005023B6 /* Cocos2DSimpleGame */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					881,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					891,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					953,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 335389688;
+			PBXWorkspaceStateSaveDate = 335389688;
+		};
+		perUserProjectItems = {
+			88277C9213FDA135002A132C /* PBXTextBookmark */ = 88277C9213FDA135002A132C /* PBXTextBookmark */;
+			88C3842213FDD244004B90B5 /* PlistBookmark */ = 88C3842213FDD244004B90B5 /* PlistBookmark */;
+			88C3842513FDD244004B90B5 /* PBXTextBookmark */ = 88C3842513FDD244004B90B5 /* PBXTextBookmark */;
+			88C3842613FDD244004B90B5 /* XDModelBookmark */ = 88C3842613FDD244004B90B5 /* XDModelBookmark */;
+			88C3842913FDD244004B90B5 /* XDModelBookmark */ = 88C3842913FDD244004B90B5 /* XDModelBookmark */;
+			88C3842B13FDD244004B90B5 /* PBXTextBookmark */ = 88C3842B13FDD244004B90B5 /* PBXTextBookmark */;
+			88C3844113FDD7D3004B90B5 /* PBXTextBookmark */ = 88C3844113FDD7D3004B90B5 /* PBXTextBookmark */;
+			88C3844213FDD7D3004B90B5 /* PBXTextBookmark */ = 88C3844213FDD7D3004B90B5 /* PBXTextBookmark */;
+			88C3844313FDD7D3004B90B5 /* PBXTextBookmark */ = 88C3844313FDD7D3004B90B5 /* PBXTextBookmark */;
+			88C3844413FDD7D3004B90B5 /* PBXTextBookmark */ = 88C3844413FDD7D3004B90B5 /* PBXTextBookmark */;
+			88C3844513FDD7D3004B90B5 /* PBXTextBookmark */ = 88C3844513FDD7D3004B90B5 /* PBXTextBookmark */;
+			88C3844613FDD7D3004B90B5 /* PBXTextBookmark */ = 88C3844613FDD7D3004B90B5 /* PBXTextBookmark */;
+			88C3844713FDD7D3004B90B5 /* PBXTextBookmark */ = 88C3844713FDD7D3004B90B5 /* PBXTextBookmark */;
+			88C3844813FDD7D3004B90B5 /* PBXTextBookmark */ = 88C3844813FDD7D3004B90B5 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 8888A3F813FD880E005023B6 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	506EE05D10304ED200A389B3 /* cocos2d libraries */ = {
+		activeExec = 0;
+	};
+	88277C9213FDA135002A132C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E02BB79A126CC223006E46A2 /* CCLayer.h */;
+		name = "CCLayer.h: 143";
+		rLen = 30;
+		rLoc = 4245;
+		rType = 0;
+		vrLen = 1453;
+		vrLoc = 4001;
+	};
+	8888A3E413FD87B5005023B6 /* Cocos2DSimpleGame */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Cocos2DSimpleGame;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	8888A3F813FD880E005023B6 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	8888A3F913FD880E005023B6 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	88C3842213FDD244004B90B5 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 50F414EF1069373D002A0D5E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/cuzzo/Downloads/Cocos2DSimpleGame/Resources/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	88C3842513FDD244004B90B5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E0F80F5F120A0182005866B8 /* RootViewController.m */;
+		name = "RootViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1343;
+		vrLoc = 1450;
+	};
+	88C3842613FDD244004B90B5 /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = 88C3842713FDD244004B90B5 /* Classes_1.xcclassmodel */;
+		fallbackIsa = PBXBookmark;
+		uiCtxt = {
+			UIContextForClassArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnns = (
+					"CT Class",
+					"CT Kind",
+					"CT Superclass",
+					"CT Documentation",
+				);
+				chosenTableColumnns_sortDirections = (
+				);
+				chosenTableColumnns_sortKeys = (
+				);
+				chosenTableColumnns_sortSelectors = (
+				);
+				chosenTableWidths = (
+					76.000000,
+					45.000000,
+					71.454102,
+					22.000000,
+				);
+			};
+			UIContextForDetailArea = {
+				_indexOfSelectedView = 1;
+			};
+			UIContextForLayoutManager = {
+				detailSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {736, 179}}",
+						"{{741, 0}, {387, 179}}",
+					);
+				};
+				diagramSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {1128, 179}}",
+						"{{0, 184}, {1128, 366}}",
+					);
+				};
+				tableSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {242, 177}}",
+						"{{247, 0}, {487, 177}}",
+					);
+				};
+			};
+			UIContextForPropertyArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnnsAT = (
+					"PR Type Icon",
+					"PR Member",
+					"PR Kind",
+					"PR Type",
+					"PR Visibility",
+					"PR Documentation",
+				);
+				chosenTableColumnnsAT_sortDirections = (
+				);
+				chosenTableColumnnsAT_sortKeys = (
+				);
+				chosenTableColumnnsAT_sortSelectors = (
+				);
+				chosenTableColumnnsPT = (
+					"AL Type Icon",
+					"AL Member",
+					"AL Kind",
+					"AL Type",
+					"AL Visibility",
+					"AL Documentation",
+				);
+				chosenTableColumnnsPT_sortDirections = (
+				);
+				chosenTableColumnnsPT_sortKeys = (
+				);
+				chosenTableColumnnsPT_sortSelectors = (
+				);
+				chosenTableColumnnsRT = (
+					"OP Type Icon",
+					"OP Member",
+					"OP Kind",
+					"OP Type",
+					"OP Visibility",
+					"OP Documentation",
+				);
+				chosenTableColumnnsRT_sortDirections = (
+				);
+				chosenTableColumnnsRT_sortKeys = (
+				);
+				chosenTableColumnnsRT_sortSelectors = (
+				);
+				chosenTableWidthsAT = (
+					22.000000,
+					122.000000,
+					66.000000,
+					82.000000,
+					44.000000,
+					22.000000,
+				);
+				chosenTableWidthsPT = (
+					22.000000,
+					122.000000,
+					61.000000,
+					87.000000,
+					138.000000,
+					22.000000,
+				);
+				chosenTableWidthsRT = (
+					22.000000,
+					122.000000,
+					62.000000,
+					86.000000,
+					44.000000,
+					22.000000,
+				);
+			};
+			"xdesign model browser state key - shown/hidden" = 1;
+			"xdesign model diagram view visible rect key" = "{{-1, 16}, {1113, 351}}";
+			"xdesign model selected entities key" = (
+			);
+			"xdesign model selected properties key" = (
+			);
+		};
+	};
+	88C3842713FDD244004B90B5 /* Classes_1.xcclassmodel */ = {
+		isa = PBXFileReference;
+		path = Classes_1.xcclassmodel;
+		sourceTree = "<group>";
+	};
+	88C3842913FDD244004B90B5 /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = 88C3842A13FDD244004B90B5 /* Classes_2.xcclassmodel */;
+		fallbackIsa = PBXBookmark;
+		uiCtxt = {
+			UIContextForClassArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnns = (
+					"CT Class",
+					"CT Kind",
+					"CT Superclass",
+					"CT Documentation",
+				);
+				chosenTableColumnns_sortDirections = (
+				);
+				chosenTableColumnns_sortKeys = (
+				);
+				chosenTableColumnns_sortSelectors = (
+				);
+				chosenTableWidths = (
+					76.000000,
+					45.000000,
+					71.454102,
+					22.000000,
+				);
+			};
+			UIContextForDetailArea = {
+				_indexOfSelectedView = 1;
+			};
+			UIContextForLayoutManager = {
+				detailSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {736, 177}}",
+						"{{741, 0}, {387, 177}}",
+					);
+				};
+				diagramSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {1128, 179}}",
+						"{{0, 184}, {1128, 366}}",
+					);
+				};
+				tableSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {242, 177}}",
+						"{{247, 0}, {487, 177}}",
+					);
+				};
+			};
+			UIContextForPropertyArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnnsAT = (
+					"PR Type Icon",
+					"PR Member",
+					"PR Kind",
+					"PR Type",
+					"PR Visibility",
+					"PR Documentation",
+				);
+				chosenTableColumnnsAT_sortDirections = (
+				);
+				chosenTableColumnnsAT_sortKeys = (
+				);
+				chosenTableColumnnsAT_sortSelectors = (
+				);
+				chosenTableColumnnsPT = (
+					"AL Type Icon",
+					"AL Member",
+					"AL Kind",
+					"AL Type",
+					"AL Visibility",
+					"AL Documentation",
+				);
+				chosenTableColumnnsPT_sortDirections = (
+				);
+				chosenTableColumnnsPT_sortKeys = (
+				);
+				chosenTableColumnnsPT_sortSelectors = (
+				);
+				chosenTableColumnnsRT = (
+					"OP Type Icon",
+					"OP Member",
+					"OP Kind",
+					"OP Type",
+					"OP Visibility",
+					"OP Documentation",
+				);
+				chosenTableColumnnsRT_sortDirections = (
+				);
+				chosenTableColumnnsRT_sortKeys = (
+				);
+				chosenTableColumnnsRT_sortSelectors = (
+				);
+				chosenTableWidthsAT = (
+					22.000000,
+					122.000000,
+					66.000000,
+					82.000000,
+					44.000000,
+					22.000000,
+				);
+				chosenTableWidthsPT = (
+					22.000000,
+					122.000000,
+					61.000000,
+					87.000000,
+					138.000000,
+					22.000000,
+				);
+				chosenTableWidthsRT = (
+					22.000000,
+					122.000000,
+					62.000000,
+					86.000000,
+					44.000000,
+					22.000000,
+				);
+			};
+			"xdesign model browser state key - shown/hidden" = 1;
+			"xdesign model diagram view visible rect key" = "{{-1, 0}, {1113, 351}}";
+			"xdesign model selected entities key" = (
+				"<XDSCClass: 0x2017edfa0>{name=HelloWorld, package=}",
+			);
+			"xdesign model selected properties key" = (
+				"<XDSCProperty: 0x2014b6e80>{name=_projectiles, type=<XDUMLDataTypeImp: 0x20145a380>{name=NSMutableArray *, package=}}",
+			);
+		};
+	};
+	88C3842A13FDD244004B90B5 /* Classes_2.xcclassmodel */ = {
+		isa = PBXFileReference;
+		path = Classes_2.xcclassmodel;
+		sourceTree = "<group>";
+	};
+	88C3842B13FDD244004B90B5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F3B9A2C0EF2145700286867 /* Cocos2DSimpleGameAppDelegate.h */;
+		name = "Cocos2DSimpleGameAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 411;
+		vrLoc = 0;
+	};
+	88C3844113FDD7D3004B90B5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E11EC23D129A2D2E008B1CA2 /* GameOverScene.m */;
+		name = "GameOverScene.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 742;
+		vrLoc = 0;
+	};
+	88C3844213FDD7D3004B90B5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E11EC23C129A2D2E008B1CA2 /* GameOverScene.h */;
+		name = "GameOverScene.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 415;
+		vrLoc = 0;
+	};
+	88C3844313FDD7D3004B90B5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E0F80F5E120A0182005866B8 /* RootViewController.h */;
+		name = "RootViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 242;
+		vrLoc = 0;
+	};
+	88C3844413FDD7D3004B90B5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E0F80F5D120A0182005866B8 /* GameConfig.h */;
+		name = "GameConfig.h: 25";
+		rLen = 0;
+		rLoc = 514;
+		rType = 0;
+		vrLen = 542;
+		vrLoc = 0;
+	};
+	88C3844513FDD7D3004B90B5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F3B9A2B0EF2145700286867 /* Cocos2DSimpleGameAppDelegate.m */;
+		name = "Cocos2DSimpleGameAppDelegate.m: 27";
+		rLen = 0;
+		rLoc = 545;
+		rType = 0;
+		vrLen = 1213;
+		vrLoc = 2188;
+	};
+	88C3844613FDD7D3004B90B5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E11EC23A129A2D2E008B1CA2 /* HelloWorldScene.h */;
+		name = "HelloWorldScene.h: 10";
+		rLen = 0;
+		rLoc = 222;
+		rType = 0;
+		vrLen = 404;
+		vrLoc = 0;
+	};
+	88C3844713FDD7D3004B90B5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E11EC23B129A2D2E008B1CA2 /* HelloWorldScene.m */;
+		name = "HelloWorldScene.m: 152";
+		rLen = 0;
+		rLoc = 4409;
+		rType = 0;
+		vrLen = 1496;
+		vrLoc = 3533;
+	};
+	88C3844813FDD7D3004B90B5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E11EC23B129A2D2E008B1CA2 /* HelloWorldScene.m */;
+		name = "HelloWorldScene.m: 152";
+		rLen = 0;
+		rLoc = 4409;
+		rType = 0;
+		vrLen = 1603;
+		vrLoc = 3767;
+	};
+	E02BB79A126CC223006E46A2 /* CCLayer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 2600}}";
+			sepNavSelRange = "{4245, 30}";
+			sepNavVisRange = "{4001, 1453}";
+		};
+	};
+	E0F80F5D120A0182005866B8 /* GameConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 512}}";
+			sepNavSelRange = "{514, 0}";
+			sepNavVisRange = "{0, 542}";
+		};
+	};
+	E0F80F5E120A0182005866B8 /* RootViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 512}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 242}";
+		};
+	};
+	E0F80F5F120A0182005866B8 /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 1976}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1450, 1343}";
+		};
+	};
+	E11EC23A129A2D2E008B1CA2 /* HelloWorldScene.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 512}}";
+			sepNavSelRange = "{222, 0}";
+			sepNavVisRange = "{0, 404}";
+		};
+	};
+	E11EC23B129A2D2E008B1CA2 /* HelloWorldScene.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1301, 3939}}";
+			sepNavSelRange = "{4409, 0}";
+			sepNavVisRange = "{4110, 846}";
+			sepNavWindowFrame = "{{15, 193}, {1250, 680}}";
+		};
+	};
+	E11EC23C129A2D2E008B1CA2 /* GameOverScene.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 512}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 415}";
+		};
+	};
+	E11EC23D129A2D2E008B1CA2 /* GameOverScene.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 858}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 742}";
+		};
+	};
+}
