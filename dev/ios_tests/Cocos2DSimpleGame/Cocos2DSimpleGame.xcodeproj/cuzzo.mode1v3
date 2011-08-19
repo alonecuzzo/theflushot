@@ -328,7 +328,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>88B4472F13FDDC4E00F2C615</string>
+										<string>88B4477213FE027E00F2C615</string>
 										<key>history</key>
 										<array>
 											<string>88277C9213FDA135002A132C</string>
@@ -340,8 +340,8 @@
 											<string>88C3844313FDD7D3004B90B5</string>
 											<string>88C3844413FDD7D3004B90B5</string>
 											<string>88C3844513FDD7D3004B90B5</string>
-											<string>88C3844613FDD7D3004B90B5</string>
-											<string>88C3844813FDD7D3004B90B5</string>
+											<string>88B4475313FDE3EB00F2C615</string>
+											<string>88B4475413FDE3EB00F2C615</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -353,14 +353,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1130, 561}}</string>
+								<string>{{0, 0}, {1130, 541}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1440 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>561pt</string>
+							<string>541pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -373,14 +373,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 566}, {1130, 212}}</string>
+								<string>{{0, 546}, {1130, 232}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1440 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>212pt</string>
+							<string>232pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -539,12 +539,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>88B4473013FDDC4E00F2C615</string>
 		<string>88B4472713FDDB1A00F2C615</string>
 		<string>88B4472813FDDB1A00F2C615</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>8888A3F413FD87F1005023B6</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Cocos2DSimpleGame.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -927,7 +926,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

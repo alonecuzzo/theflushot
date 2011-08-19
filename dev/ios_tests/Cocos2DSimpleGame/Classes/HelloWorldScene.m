@@ -128,7 +128,7 @@
 }
 
 #define kHeroMovementAction 1
-#define kPlayerSpeed 100
+#define kPlayerSpeed 500
 - (void) accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
     // use the running scene to grab the appropriate game layer by it's tag
     //GameLayer *layer = (GameLayer *)[[[CCDirector sharedDirector] runningScene] getChildByTag:kTagGameLayer];
@@ -166,8 +166,8 @@
 		printf("destY: %f", destY);
         shouldMove = YES;
     } else {
-		destX = currentX;
-		destY = currentY;
+		//destX = currentX;
+//		destY = currentY;
 	}
 	
 //	if(acceleration.y < -0.25) {  // tilting the device to the right
@@ -186,15 +186,27 @@
     if(shouldMove) {
         CGSize wins = [[CCDirector sharedDirector] winSize];
        // // ensure we aren't moving out of bounds     
-//       if(destY < 30 || destY > wins.height - 100) {
-//            // do nothing
-//		   printf("doing nothing!!");
-//        } else {
+       if(destY < [playerSprite boundingBox].size.height / 2 || destY > wins.height - [playerSprite boundingBox].size.height / 2 ) {
+            // do nothing
+		  //printf("stopping at: %g", playerSprite.position.y);
+		   if(destY < [playerSprite boundingBox].size.height / 2)
+		   {
+			   CCAction *action = [CCMoveTo actionWithDuration:0.3f position: CGPointMake(currentX, [playerSprite boundingBox].size.height / 2)];
+			   [action setTag:kHeroMovementAction];
+			   [playerSprite runAction:action];
+		   } else {
+			   
+			   CCAction *action = [CCMoveTo actionWithDuration:0.3f position: CGPointMake(currentX, wins.height - [playerSprite boundingBox].size.height / 2)];
+			   [action setTag:kHeroMovementAction];
+			   [playerSprite runAction:action];
+		   }
+		   
+        } else {
 			 printf("move command caught!!");
-            CCAction *action = [CCMoveTo actionWithDuration:1 position: CGPointMake(currentX, destY)];
+            CCAction *action = [CCMoveTo actionWithDuration:0.3f position: CGPointMake(currentX, destY)];
             [action setTag:kHeroMovementAction];
             [playerSprite runAction:action];
-		//}
+		}
     } else {
         // should stop
         [playerSprite stopActionByTag:kHeroMovementAction];
@@ -261,7 +273,8 @@
 	// Set up initial location of projectile
 	CGSize winSize = [[CCDirector sharedDirector] winSize];
 	CCSprite *projectile = [CCSprite spriteWithFile:@"Projectile.png" rect:CGRectMake(0, 0, 20, 20)];
-	projectile.position = ccp(20, winSize.height/2);
+	//projectile.position = ccp(20, winSize.height/2);
+	projectile.position = ccp(20, player.position.y);
 	
 	// Determine offset of location to projectile
 	int offX = location.x - projectile.position.x;
