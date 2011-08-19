@@ -1,7 +1,7 @@
 TCocos2DSimpleGame
 v7
 r0
-t335413923.203853
+t335463909.492123
 cCheck dependencies
 cCpResource build/Release-iphoneos/Cocos2DSimpleGame.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
 cProcessInfoPlistFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Info.plist Resources/Info.plist
@@ -20,6 +20,7 @@ cCpResource build/Release-iphoneos/Cocos2DSimpleGame.app/pew-pew-lei.caf Resourc
 cCopyPNGFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Player.png Resources/Player.png
 cCopyPNGFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Projectile.png Resources/Projectile.png
 cCopyPNGFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Target.png Resources/Target.png
+cCopyPNGFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Bkgrnd-cells1.png Resources/Bkgrnd-cells1.png
 cProcessPCH /var/folders/dQ/dQW+26+lGOywxfL3R3r9kE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocos2DSimpleGame_Prefix-bfgaotqtdsnrnvdrgsmojehihruf/Cocos2DSimpleGame_Prefix.pch.gch Cocos2DSimpleGame_Prefix.pch normal armv6 objective-c com.apple.compilers.llvmgcc42
 cProcessPCH /var/folders/dQ/dQW+26+lGOywxfL3R3r9kE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocos2DSimpleGame_Prefix-cjobryuwomubwrbfxsmxnxrmetdb/Cocos2DSimpleGame_Prefix.pch.gch Cocos2DSimpleGame_Prefix.pch normal armv7 objective-c com.apple.compilers.llvmgcc42
 cCompileC build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/main.o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/main.m normal armv6 objective-c com.apple.compilers.llvmgcc42
@@ -31,9 +32,9 @@ cCompileC build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build
 cCompileC build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGameAppDelegate.o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/Cocos2DSimpleGameAppDelegate.m normal armv7 objective-c com.apple.compilers.llvmgcc42
 cCompileC build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/RootViewController.o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/RootViewController.m normal armv7 objective-c com.apple.compilers.llvmgcc42
 cCompileC build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/HelloWorldScene.o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cLd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame normal armv6
 cCompileC build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/GameOverScene.o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/GameOverScene.m normal armv7 objective-c com.apple.compilers.llvmgcc42
 cLd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame normal armv7
-cLd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame normal armv6
 cCreateUniversalBinary /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame normal "armv6 armv7"
 cGenerateDSYMFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app.dSYM /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame
 cProcessProductPackaging "/Users/cuzzo/Library/MobileDevice/Provisioning Profiles/68C47ED0-556F-43BC-B3DD-0A2CBE6342AD.mobileprovision" /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/embedded.mobileprovision
@@ -1325,9 +1326,9 @@ s404
 i"cocos2d.h"
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m
-c000000004E4DCB200000000000002A26
-t1313721120
-s10790
+c000000004E4E8E5D000000000000303D
+t1313771101
+s12349
 i"HelloWorldScene.h"
 i"SimpleAudioEngine.h"
 i"GameOverScene.h"
@@ -1352,6 +1353,11 @@ t1290401114
 s197
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
+
+N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/Bkgrnd-cells1.png
+c000000004E4E87D60000000000001D0F
+t1313769430
+s7439
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/Default.png
 c000000004CE9F55A00000000000077AB
@@ -1389,19 +1395,19 @@ t1290401114
 s21365
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/Player.png
-c000000004B73127700000000000010E9
-t1265832567
-s4329
+c000000004E4E7A210000000000000934
+t1313765921
+s2356
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/Projectile.png
-c000000004B7312DD00000000000011E7
-t1265832669
-s4583
+c000000004E4E71C30000000000000459
+t1313763779
+s1113
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/Target.png
-c000000004B731289000000000000146D
-t1265832585
-s5229
+c000000004E4E776100000000000010C3
+t1313765217
+s4291
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/background-music-aac.caf
 c000000004B630BCF000000000003FAD8
@@ -1433,8 +1439,8 @@ t1313696910
 s645
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame
-t1313721122
-s1119168
+t1313771105
+s1119276
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame.LinkFileList
 c000000004E4DA16C000000000000035F
@@ -1450,8 +1456,8 @@ t1313710445
 s20116
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/HelloWorldScene.o
-t1313721122
-s73280
+t1313771105
+s76264
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/RootViewController.o
 t1313710445
@@ -1462,8 +1468,8 @@ t1313710445
 s3712
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame
-t1313721122
-s1009084
+t1313771105
+s1009192
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame.LinkFileList
 c000000004E4DA16C000000000000035F
@@ -1479,8 +1485,8 @@ t1313710446
 s19868
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/HelloWorldScene.o
-t1313721122
-s73424
+t1313771105
+s76208
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/RootViewController.o
 t1313710446
@@ -1491,16 +1497,20 @@ t1313710445
 s3760
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app
-t1313721123
-s816
+t1313771109
+s850
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app.dSYM
-t1313721122
+t1313771106
 s102
 
+N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Bkgrnd-cells1.png
+t1313769752
+s6515
+
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame
-t1313721122
-s2135484
+t1313771105
+s2135592
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Default.png
 t1313696900
@@ -1539,20 +1549,20 @@ t1313696899
 s8
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Player.png
-t1313696901
-s4542
+t1313765928
+s2427
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Projectile.png
-t1313696902
-s4599
+t1313763818
+s1200
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/ResourceRules.plist
 t1313696899
 s485
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Target.png
-t1313696902
-s5615
+t1313765242
+s4485
 
 N/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/background-music-aac.caf
 t1313696901
@@ -2375,7 +2385,7 @@ s1310
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies335413921#335413921#0(0"0(0#1#0"8699737216#0"0#
+lSLF07#2@18"Check dependencies335463904#335463904#0(0"0(0#1#0"8787055360#0"0#
 
 CCodeSign /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app
 s335402597.129504
@@ -2386,12 +2396,12 @@ x/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGa
 lSLF07#2@53"CodeSign build/Release-iphoneos/Cocos2DSimpleGame.app335402597#335402597#0(0"0(0#0#85"/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app8666710784#711"    cd /Users/cuzzo/Downloads/Cocos2DSimpleGame    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Eric J Bell (M33622QEFW)" --resource-rules=/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/ResourceRules.plist --entitlements /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame.xcent /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app0#
 
 CCodeSign /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app
-s335413922.878201
-e335413923.203814
+s335463906.513061
+e335463909.491857
 r1
 xCodeSign
 x/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app
-lSLF07#2@53"CodeSign build/Release-iphoneos/Cocos2DSimpleGame.app335413922#335413923#0(0"0(0#0#106"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app8700172480#795"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Eric J Bell (M33622QEFW)" --resource-rules=/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/ResourceRules.plist --entitlements /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame.xcent /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app0#
+lSLF07#2@53"CodeSign build/Release-iphoneos/Cocos2DSimpleGame.app335463906#335463909#0(0"0(0#0#106"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app8769543232#795"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Eric J Bell (M33622QEFW)" --resource-rules=/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/ResourceRules.plist --entitlements /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame.xcent /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app0#
 
 CCompileC build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGameAppDelegate.o /Users/cuzzo/Downloads/Cocos2DSimpleGame/Classes/Cocos2DSimpleGameAppDelegate.m normal armv6 objective-c com.apple.compilers.llvmgcc42
 s335402595.169483
@@ -2459,8 +2469,8 @@ xcom.apple.compilers.llvmgcc42
 lSLF07#2@74"Compile /Users/cuzzo/Downloads/Cocos2DSimpleGame/Classes/HelloWorldScene.m335402595#335402596#0(0"0(0#0#66"/Users/cuzzo/Downloads/Cocos2DSimpleGame/Classes/HelloWorldScene.m8665307936#2103"    cd /Users/cuzzo/Downloads/Cocos2DSimpleGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -funroll-loops -fvisibility=hidden -gdwarf-2 -mno-thumb -miphoneos-version-min=3.0 -iquote /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-generated-files.hmap -I/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-own-target-headers.hmap -I/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-all-target-headers.hmap -iquote /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-project-headers.hmap -Wall -F/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos -I/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/include -I/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/DerivedSources/armv6 -I/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/dQ/dQW+26+lGOywxfL3R3r9kE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocos2DSimpleGame_Prefix-fbdlreyvbtjmfibvvfzybjzmwwve/Cocos2DSimpleGame_Prefix.pch -c /Users/cuzzo/Downloads/Cocos2DSimpleGame/Classes/HelloWorldScene.m -o /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/HelloWorldScene.o0#
 
 CCompileC build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/HelloWorldScene.o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m normal armv6 objective-c com.apple.compilers.llvmgcc42
-s335413921.738758
-e335413922.305466
+s335463904.482672
+e335463905.083936
 r1
 xCompileC
 xbuild/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/HelloWorldScene.o
@@ -2469,7 +2479,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@95"Compile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m335413921#335413922#0(0"0(0#0#87"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m8699868096#2334"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -funroll-loops -fvisibility=hidden -gdwarf-2 -mno-thumb -miphoneos-version-min=3.0 -iquote /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-generated-files.hmap -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-own-target-headers.hmap -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-all-target-headers.hmap -iquote /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-project-headers.hmap -Wall -F/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/include -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/DerivedSources/armv6 -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/dQ/dQW+26+lGOywxfL3R3r9kE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocos2DSimpleGame_Prefix-bfgaotqtdsnrnvdrgsmojehihruf/Cocos2DSimpleGame_Prefix.pch -c /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m -o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/HelloWorldScene.o0#
+lSLF07#2@95"Compile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m335463904#335463905#0(0"0(0#0#87"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m8787928384#2334"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -funroll-loops -fvisibility=hidden -gdwarf-2 -mno-thumb -miphoneos-version-min=3.0 -iquote /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-generated-files.hmap -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-own-target-headers.hmap -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-all-target-headers.hmap -iquote /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-project-headers.hmap -Wall -F/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/include -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/DerivedSources/armv6 -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/dQ/dQW+26+lGOywxfL3R3r9kE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocos2DSimpleGame_Prefix-bfgaotqtdsnrnvdrgsmojehihruf/Cocos2DSimpleGame_Prefix.pch -c /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m -o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/HelloWorldScene.o0#
 
 CCompileC build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/RootViewController.o /Users/cuzzo/Downloads/Cocos2DSimpleGame/Classes/RootViewController.m normal armv6 objective-c com.apple.compilers.llvmgcc42
 s335402595.172063
@@ -2589,8 +2599,8 @@ xcom.apple.compilers.llvmgcc42
 lSLF07#2@74"Compile /Users/cuzzo/Downloads/Cocos2DSimpleGame/Classes/HelloWorldScene.m335402595#335402596#0(0"0(0#0#66"/Users/cuzzo/Downloads/Cocos2DSimpleGame/Classes/HelloWorldScene.m8666091168#2100"    cd /Users/cuzzo/Downloads/Cocos2DSimpleGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -funroll-loops -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-generated-files.hmap -I/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-own-target-headers.hmap -I/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-all-target-headers.hmap -iquote /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-project-headers.hmap -Wall -F/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos -I/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/include -I/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/DerivedSources/armv7 -I/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/dQ/dQW+26+lGOywxfL3R3r9kE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocos2DSimpleGame_Prefix-clwvqqxgctniipeecrlfmjcebynd/Cocos2DSimpleGame_Prefix.pch -c /Users/cuzzo/Downloads/Cocos2DSimpleGame/Classes/HelloWorldScene.m -o /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/HelloWorldScene.o0#
 
 CCompileC build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/HelloWorldScene.o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m normal armv7 objective-c com.apple.compilers.llvmgcc42
-s335413921.778886
-e335413922.302448
+s335463904.487216
+e335463905.126129
 r1
 xCompileC
 xbuild/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/HelloWorldScene.o
@@ -2599,7 +2609,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvmgcc42
-lSLF07#2@95"Compile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m335413921#335413922#0(0"0(0#0#87"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m8702606976#2331"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -funroll-loops -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-generated-files.hmap -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-own-target-headers.hmap -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-all-target-headers.hmap -iquote /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-project-headers.hmap -Wall -F/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/include -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/DerivedSources/armv7 -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/dQ/dQW+26+lGOywxfL3R3r9kE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocos2DSimpleGame_Prefix-cjobryuwomubwrbfxsmxnxrmetdb/Cocos2DSimpleGame_Prefix.pch -c /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m -o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/HelloWorldScene.o0#
+lSLF07#2@95"Compile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m335463904#335463905#0(0"0(0#0#87"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m8787740064#2331"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -funroll-loops -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-generated-files.hmap -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-own-target-headers.hmap -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-all-target-headers.hmap -iquote /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Cocos2DSimpleGame-project-headers.hmap -Wall -F/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/include -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/DerivedSources/armv7 -I/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/DerivedSources -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -include /var/folders/dQ/dQW+26+lGOywxfL3R3r9kE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocos2DSimpleGame_Prefix-cjobryuwomubwrbfxsmxnxrmetdb/Cocos2DSimpleGame_Prefix.pch -c /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Classes/HelloWorldScene.m -o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/HelloWorldScene.o0#
 
 CCompileC build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/RootViewController.o /Users/cuzzo/Downloads/Cocos2DSimpleGame/Classes/RootViewController.m normal armv7 objective-c com.apple.compilers.llvmgcc42
 s335402595.717099
@@ -2761,6 +2771,15 @@ x/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGa
 xResources/logo6.png
 lSLF07#2@86"CopyPNGFile build/Release-iphoneos/Cocos2DSimpleGame.app/logo6.png Resources/logo6.png335389700#335389701#0(0"0(0#0#60"/Users/cuzzo/Downloads/Cocos2DSimpleGame/Resources/logo6.png8609853632#586"    cd /Users/cuzzo/Downloads/Cocos2DSimpleGame    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/cuzzo/Downloads/Cocos2DSimpleGame/Resources/logo6.png /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/logo6.png0#
 
+CCopyPNGFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Bkgrnd-cells1.png Resources/Bkgrnd-cells1.png
+s335462551.793963
+e335462552.314517
+r1
+xCopyPNGFile
+x/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Bkgrnd-cells1.png
+xResources/Bkgrnd-cells1.png
+lSLF07#2@102"CopyPNGFile build/Release-iphoneos/Cocos2DSimpleGame.app/Bkgrnd-cells1.png Resources/Bkgrnd-cells1.png335462551#335462552#0(0"0(0#0#89"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/Bkgrnd-cells1.png31525665549910100#665"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/Bkgrnd-cells1.png /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Bkgrnd-cells1.png0#
+
 CCopyPNGFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Default.png Resources/Default.png
 r0
 
@@ -2783,13 +2802,31 @@ CCopyPNGFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build
 r0
 
 CCopyPNGFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Player.png Resources/Player.png
-r0
+s335458727.570521
+e335458729.047767
+r1
+xCopyPNGFile
+x/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Player.png
+xResources/Player.png
+lSLF07#2@88"CopyPNGFile build/Release-iphoneos/Cocos2DSimpleGame.app/Player.png Resources/Player.png335458727#335458729#0(0"0(0#0#82"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/Player.png8753706560#651"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/Player.png /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Player.png0#
 
 CCopyPNGFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Projectile.png Resources/Projectile.png
-r0
+s335456618.161049
+e335456618.206512
+r1
+xCopyPNGFile
+x/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Projectile.png
+xResources/Projectile.png
+lSLF07#2@96"CopyPNGFile build/Release-iphoneos/Cocos2DSimpleGame.app/Projectile.png Resources/Projectile.png335456618#335456618#0(0"0(0#0#86"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/Projectile.png8723739456#659"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/Projectile.png /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Projectile.png0#
 
 CCopyPNGFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Target.png Resources/Target.png
-r0
+s335458042.049936
+e335458042.712748
+r1
+xCopyPNGFile
+x/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Target.png
+xResources/Target.png
+lSLF07#2@88"CopyPNGFile build/Release-iphoneos/Cocos2DSimpleGame.app/Target.png Resources/Target.png335458042#335458042#0(0"0(0#0#82"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/Target.png8742397248#651"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Resources/Target.png /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Target.png0#
 
 CCopyPNGFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/fps_images.png Resources/fps_images.png
 r0
@@ -2844,14 +2881,14 @@ xarmv6 armv7
 lSLF07#2@105"CreateUniversalBinary build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame normal "armv6 armv7"335402596#335402596#0(0"0(0#0#52"/Users/cuzzo/Downloads/Cocos2DSimpleGame/armv6 armv78668008160#612"    cd /Users/cuzzo/Downloads/Cocos2DSimpleGame    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame -output /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame0#
 
 CCreateUniversalBinary /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame normal "armv6 armv7"
-s335413922.543993
-e335413922.552465
+s335463905.522124
+e335463905.539007
 r1
 xCreateUniversalBinary
 x/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame
 xnormal
 xarmv6 armv7
-lSLF07#2@105"CreateUniversalBinary build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame normal "armv6 armv7"335413922#335413922#0(0"0(0#0#73"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/armv6 armv78701181344#696"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame -output /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame0#
+lSLF07#2@105"CreateUniversalBinary build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame normal "armv6 armv7"335463905#335463905#0(0"0(0#0#73"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/armv6 armv78781192192#696"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame -output /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame0#
 
 CGenerateDSYMFile /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app.dSYM /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame
 s335402596.703564
@@ -2863,13 +2900,13 @@ x/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGa
 lSLF07#2@129"GenerateDSYMFile build/Release-iphoneos/Cocos2DSimpleGame.app.dSYM build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame335402596#335402597#0(0"0(0#0#103"/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame8667773824#402"    cd /Users/cuzzo/Downloads/Cocos2DSimpleGame    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame -o /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app.dSYM0#
 
 CGenerateDSYMFile /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app.dSYM /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame
-s335413922.552553
-e335413922.875757
+s335463905.539099
+e335463906.509451
 r1
 xGenerateDSYMFile
 x/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app.dSYM
 x/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame
-lSLF07#2@129"GenerateDSYMFile build/Release-iphoneos/Cocos2DSimpleGame.app.dSYM build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame335413922#335413922#0(0"0(0#0#124"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame8701173920#465"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame -o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app.dSYM0#
+lSLF07#2@129"GenerateDSYMFile build/Release-iphoneos/Cocos2DSimpleGame.app.dSYM build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame335463905#335463906#0(0"0(0#0#124"/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame8783797984#465"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Cocos2DSimpleGame -o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app.dSYM0#
 
 CLd /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame normal armv6
 s335402596.114162
@@ -2892,24 +2929,24 @@ xarmv7
 lSLF07#2@155"Link /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame335402596#335402596#0(0"0(0#0#0"8667973888#1092"    cd /Users/cuzzo/Downloads/Cocos2DSimpleGame    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos -F/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos -filelist /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame.LinkFileList -dead_strip -all_load -ObjC -miphoneos-version-min=3.0 -framework CoreGraphics -framework Foundation -framework OpenGLES -framework QuartzCore -framework UIKit -framework AudioToolbox -framework OpenAL -lz -framework AVFoundation "-lcocos2d libraries" -o /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame0#
 
 CLd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame normal armv6
-s335413922.305536
-e335413922.535563
+s335463905.084020
+e335463905.513751
 r1
 xLd
 x/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame
 xnormal
 xarmv6
-lSLF07#2@176"Link /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame335413922#335413922#0(0"0(0#0#0"8701217568#1197"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos -F/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos -filelist /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame.LinkFileList -dead_strip -all_load -ObjC -miphoneos-version-min=3.0 -framework CoreGraphics -framework Foundation -framework OpenGLES -framework QuartzCore -framework UIKit -framework AudioToolbox -framework OpenAL -lz -framework AVFoundation "-lcocos2d libraries" -o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame0#
+lSLF07#2@176"Link /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame335463905#335463905#0(0"0(0#0#0"8753570304#1197"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos -F/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos -filelist /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame.LinkFileList -dead_strip -all_load -ObjC -miphoneos-version-min=3.0 -framework CoreGraphics -framework Foundation -framework OpenGLES -framework QuartzCore -framework UIKit -framework AudioToolbox -framework OpenAL -lz -framework AVFoundation "-lcocos2d libraries" -o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv6/Cocos2DSimpleGame0#
 
 CLd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame normal armv7
-s335413922.302640
-e335413922.543901
+s335463905.126313
+e335463905.522029
 r1
 xLd
 x/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame
 xnormal
 xarmv7
-lSLF07#2@176"Link /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame335413922#335413922#0(0"0(0#0#0"8701226208#1197"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos -F/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos -filelist /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame.LinkFileList -dead_strip -all_load -ObjC -miphoneos-version-min=3.0 -framework CoreGraphics -framework Foundation -framework OpenGLES -framework QuartzCore -framework UIKit -framework AudioToolbox -framework OpenAL -lz -framework AVFoundation "-lcocos2d libraries" -o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame0#
+lSLF07#2@176"Link /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame335463905#335463905#0(0"0(0#0#0"8783164704#1197"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos -F/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos -filelist /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame.LinkFileList -dead_strip -all_load -ObjC -miphoneos-version-min=3.0 -framework CoreGraphics -framework Foundation -framework OpenGLES -framework QuartzCore -framework UIKit -framework AudioToolbox -framework OpenAL -lz -framework AVFoundation "-lcocos2d libraries" -o /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Cocos2DSimpleGame.build/Release-iphoneos/Cocos2DSimpleGame.build/Objects-normal/armv7/Cocos2DSimpleGame0#
 
 CProcessInfoPlistFile /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app/Info.plist Resources/Info.plist
 s335389699.128084
@@ -3008,10 +3045,10 @@ x/Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGa
 lSLF07#2@91"Touch /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app335402597#335402597#0(0"0(0#0#0"8667191360#280"    cd /Users/cuzzo/Downloads/Cocos2DSimpleGame    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/cuzzo/Downloads/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app0#
 
 CTouch /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app
-s335413922.875889
-e335413922.878106
+s335463906.509626
+e335463906.512958
 r1
 xTouch
 x/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app
-lSLF07#2@112"Touch /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app335413922#335413922#0(0"0(0#0#0"8700275296#322"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app0#
+lSLF07#2@112"Touch /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app335463906#335463906#0(0"0(0#0#0"8779189312#322"    cd /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/build/Release-iphoneos/Cocos2DSimpleGame.app0#
 

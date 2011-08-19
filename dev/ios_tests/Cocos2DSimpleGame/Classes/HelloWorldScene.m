@@ -44,7 +44,7 @@
 //		[gameOverScene.layer.label setString:@"You Lose :["];
 //		[[CCDirector sharedDirector] replaceScene:gameOverScene];
 		
-	} else if (sprite.tag == 2) { // projectile
+	} else if (sprite.tag == 2 || sprite.tag == 3) { // projectile
 		[_projectiles removeObject:sprite];
 	}
 	
@@ -52,7 +52,7 @@
 
 -(void)addTarget {
 
-	CCSprite *target = [CCSprite spriteWithFile:@"Target.png" rect:CGRectMake(0, 0, 27, 40)]; 
+	CCSprite *target = [CCSprite spriteWithFile:@"Target.png" rect:CGRectMake(0, 0, 57, 58)]; 
 	
 	// Determine where to spawn the target along the Y axis
 	CGSize winSize = [[CCDirector sharedDirector] winSize];
@@ -67,8 +67,8 @@
 	[self addChild:target];
 	
 	// Determine speed of the target
-	int minDuration = 2.0;
-	int maxDuration = 4.0;
+	int minDuration = 4.0;
+	int maxDuration = 8.0;
 	int rangeDuration = maxDuration - minDuration;
 	int actualDuration = (arc4random() % rangeDuration) + minDuration;
 	
@@ -94,7 +94,7 @@
 {
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super" return value
-	if( (self=[super initWithColor:ccc4(255,255,255,255)] )) {
+	if( (self=[super initWithColor:ccc4(198,48,60,255)] )) {
 
 		// Enable touch events
 		self.isTouchEnabled = YES;
@@ -112,12 +112,13 @@
 		// and as close to the left side edge as we can get
 		// Remember that position is based on the anchor point, and by default the anchor
 		// point is the middle of the object.
-		player = [CCSprite spriteWithFile:@"Player.png" rect:CGRectMake(0, 0, 27, 40)];
+		player = [CCSprite spriteWithFile:@"Player.png" rect:CGRectMake(0, 0, 60, 39)];
 		player.position = ccp(player.contentSize.width/2, winSize.height/2);
 		[self addChild:player];
 		
 		// Call game logic about every second
 		[self schedule:@selector(gameLogic:) interval:1.0];
+		[self schedule:@selector(addBackgroundCells:) interval:10.0];
 		[self schedule:@selector(update:)];
 		
 		// Start up the background music
@@ -125,6 +126,40 @@
 		
 	}
 	return self;
+}
+
+
+-(void) addBackgroundCells: (ccTime)dt
+{
+	CCSprite *target = [CCSprite spriteWithFile:@"Bkgrnd-cells1.png" rect:CGRectMake(0, 0, 65, 59)]; 
+	// Determine where to spawn the target along the Y axis
+	CGSize winSize = [[CCDirector sharedDirector] winSize];
+	int minY = target.contentSize.height/2;
+	int maxY = winSize.height - target.contentSize.height/2;
+	int rangeY = maxY - minY;
+	int actualY = (arc4random() % rangeY) + minY;
+	target.opacity = 80;
+	target.blendFunc = (ccBlendFunc) { GL_DST_COLOR, GL_ONE_MINUS_SRC_ALPHA };
+	
+	// Create the target slightly off-screen along the right edge,
+	// and along a random position along the Y axis as calculated above
+	target.position = ccp(winSize.width + (target.contentSize.width/2), actualY);
+	[self addChild:target];
+	
+	// Determine speed of the target
+	int minDuration = 20.0;
+	int maxDuration = 30.0;
+	int rangeDuration = maxDuration - minDuration;
+	int actualDuration = (arc4random() % rangeDuration) + minDuration;
+	
+	// Create the actions
+	id actionMove = [CCMoveTo actionWithDuration:actualDuration position:ccp(-target.contentSize.width/2, actualY)];
+	id actionMoveDone = [CCCallFuncN actionWithTarget:self selector:@selector(spriteMoveFinished:)];
+	[target runAction:[CCSequence actions:actionMove, actionMoveDone, nil]];
+	
+	// Add to targets array
+	target.tag = 3;
+	//[_targets addObject:target];
 }
 
 #define kHeroMovementAction 1
@@ -145,8 +180,8 @@
 	
 //	printf("acceleration-x: %g", acceleration.x );
 //	printf("\n");
-	printf("acceleration-y: %g", acceleration.y );
-	printf("\n");
+	//printf("acceleration-y: %g", acceleration.y );
+	//printf("\n");
 //	printf("acceleration-z: %g", acceleration.z );
 //	printf("\n");
 //	printf("\n");
@@ -154,16 +189,16 @@
     if(acceleration.y > 0.0) {  // tilting the device upwards
 		destX = currentX - (acceleration.y * kPlayerSpeed);
 		//destX = playerSprite.position.x;
-        destY = currentY - (acceleration.y * kPlayerSpeed);
-		printf("should be moving down!");
-		printf("destY: %f", destY);
+        destY = currentY + (acceleration.y * kPlayerSpeed);
+	//	printf("should be moving down!");
+	//	printf("destY: %f", destY);
         shouldMove = YES;
     } else if (acceleration.y < 0.0) {  // tilting the device downwards
 		destX = currentX - (acceleration.y * kPlayerSpeed);
 		//destX = playerSprite.position.x;
-        destY = currentY - (acceleration.y * kPlayerSpeed);
-		printf("should be moving up!");
-		printf("destY: %f", destY);
+        destY = currentY + (acceleration.y * kPlayerSpeed);
+	//	printf("should be moving up!");
+	//	printf("destY: %f", destY);
         shouldMove = YES;
     } else {
 		//destX = currentX;
@@ -202,7 +237,7 @@
 		   }
 		   
         } else {
-			 printf("move command caught!!");
+			// printf("move command caught!!");
             CCAction *action = [CCMoveTo actionWithDuration:0.3f position: CGPointMake(currentX, destY)];
             [action setTag:kHeroMovementAction];
             [playerSprite runAction:action];
@@ -272,9 +307,9 @@
 	
 	// Set up initial location of projectile
 	CGSize winSize = [[CCDirector sharedDirector] winSize];
-	CCSprite *projectile = [CCSprite spriteWithFile:@"Projectile.png" rect:CGRectMake(0, 0, 20, 20)];
+	CCSprite *projectile = [CCSprite spriteWithFile:@"Projectile.png" rect:CGRectMake(0, 0, 10, 10)];
 	//projectile.position = ccp(20, winSize.height/2);
-	projectile.position = ccp(20, player.position.y);
+	projectile.position = ccp([player boundingBox].size.width, player.position.y - 3);
 	
 	// Determine offset of location to projectile
 	int offX = location.x - projectile.position.x;
@@ -285,6 +320,9 @@
     
     // Ok to add now - we've double checked position
     [self addChild:projectile];
+	[self reorderChild:projectile z:1];
+	[self reorderChild:player z:100];
+	
 
 	// Play a sound!
 	[[SimpleAudioEngine sharedEngine] playEffect:@"pew-pew-lei.caf"];
