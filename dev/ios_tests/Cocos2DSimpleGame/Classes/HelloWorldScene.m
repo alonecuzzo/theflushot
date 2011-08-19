@@ -143,23 +143,27 @@
     float currentX = playerSprite.position.x;
     float currentY = playerSprite.position.y;
 	
-	printf("acceleration-x: %g", acceleration.x );
-	printf("\n");
+//	printf("acceleration-x: %g", acceleration.x );
+//	printf("\n");
 	printf("acceleration-y: %g", acceleration.y );
 	printf("\n");
-	printf("acceleration-z: %g", acceleration.z );
-	printf("\n");
-	printf("\n");
+//	printf("acceleration-z: %g", acceleration.z );
+//	printf("\n");
+//	printf("\n");
 	
-    if(acceleration.x > 0.25) {  // tilting the device upwards
+    if(acceleration.y > 0.0) {  // tilting the device upwards
 		destX = currentX - (acceleration.y * kPlayerSpeed);
 		//destX = playerSprite.position.x;
-        destY = currentY + (acceleration.x * kPlayerSpeed);
+        destY = currentY - (acceleration.y * kPlayerSpeed);
+		printf("should be moving down!");
+		printf("destY: %f", destY);
         shouldMove = YES;
-    } else if (acceleration.x < -0.25) {  // tilting the device downwards
+    } else if (acceleration.y < 0.0) {  // tilting the device downwards
 		destX = currentX - (acceleration.y * kPlayerSpeed);
 		//destX = playerSprite.position.x;
-        destY = currentY + (acceleration.x * kPlayerSpeed);
+        destY = currentY - (acceleration.y * kPlayerSpeed);
+		printf("should be moving up!");
+		printf("destY: %f", destY);
         shouldMove = YES;
     } else {
 		destX = currentX;
@@ -181,14 +185,16 @@
 	
     if(shouldMove) {
         CGSize wins = [[CCDirector sharedDirector] winSize];
-        // ensure we aren't moving out of bounds     
-        if(destX < 30 || destX > wins.width - 30 || destY < 30 || destY > wins.height - 100) {
-            // do nothing
-        } else {
+       // // ensure we aren't moving out of bounds     
+//       if(destY < 30 || destY > wins.height - 100) {
+//            // do nothing
+//		   printf("doing nothing!!");
+//        } else {
+			 printf("move command caught!!");
             CCAction *action = [CCMoveTo actionWithDuration:1 position: CGPointMake(currentX, destY)];
             [action setTag:kHeroMovementAction];
             [playerSprite runAction:action];
-        }
+		//}
     } else {
         // should stop
         [playerSprite stopActionByTag:kHeroMovementAction];
