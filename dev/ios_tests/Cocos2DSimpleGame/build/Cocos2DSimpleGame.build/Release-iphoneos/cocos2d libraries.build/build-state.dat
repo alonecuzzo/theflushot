@@ -1,7 +1,7 @@
 Tcocos2d libraries
 v7
 r0
-t335463904.435575
+t335631472.753820
 cCheck dependencies
 cCompileC "build/Cocos2DSimpleGame.build/Release-iphoneos/cocos2d libraries.build/Objects-normal/armv6/FontLabel.o" /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/libs/FontLabel/FontLabel.m normal armv6 objective-c com.apple.compilers.llvmgcc42
 cCompileC "build/Cocos2DSimpleGame.build/Release-iphoneos/cocos2d libraries.build/Objects-normal/armv6/FontLabelStringDrawing.o" /Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/libs/FontLabel/FontLabelStringDrawing.m normal armv6 objective-c com.apple.compilers.llvmgcc42
@@ -5694,7 +5694,7 @@ i<UIKit/UIKit.h>
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies335463904#335463904#0(0"0(0#1#0"8784196736#0"0#
+lSLF07#2@18"Check dependencies335631472#335631472#0(0"0(0#1#0"8871560992#0"0#
 
 CCompileC "build/Cocos2DSimpleGame.build/Release-iphoneos/cocos2d libraries.build/Objects-normal/armv6/CCAction.o" /Users/cuzzo/Downloads/Cocos2DSimpleGame/libs/cocos2d/CCAction.m normal armv6 objective-c com.apple.compilers.llvmgcc42
 r0

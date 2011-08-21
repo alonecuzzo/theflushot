@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>88B447E913FEC5E200F2C615</string>
+										<string>88B4484F140154AE00F2C615</string>
 										<key>history</key>
 										<array>
 											<string>88277C9213FDA135002A132C</string>
@@ -355,7 +355,7 @@
 											<string>88B447C713FEBFFA00F2C615</string>
 											<string>88B447C813FEBFFA00F2C615</string>
 											<string>88B447C913FEBFFA00F2C615</string>
-											<string>88B447CA13FEBFFA00F2C615</string>
+											<string>88B4482B140060F700F2C615</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -553,11 +553,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>88B4484E1401547E00F2C615</string>
 		<string>88B4472713FDDB1A00F2C615</string>
 		<string>88B4472813FDDB1A00F2C615</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>8888A3F413FD87F1005023B6</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/cuzzo/Sites/theflushot/dev/ios_tests/Cocos2DSimpleGame/Cocos2DSimpleGame.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -940,7 +941,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

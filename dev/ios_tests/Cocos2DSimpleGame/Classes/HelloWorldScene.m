@@ -317,7 +317,7 @@
 	
 	// Bail out if we are shooting down or backwards
 	if (offX <= 0) return;
-    
+	
     // Ok to add now - we've double checked position
     [self addChild:projectile];
 	[self reorderChild:projectile z:1];
@@ -339,6 +339,21 @@
 	float length = sqrtf((offRealX*offRealX)+(offRealY*offRealY));
 	float velocity = 480/1; // 480pixels/1sec
 	float realMoveDuration = length/velocity;
+	
+	float angleRadians = atanf((float)offRealY / (float)offRealX);
+	float angleDegrees = CC_RADIANS_TO_DEGREES(angleRadians);
+	float cocosAngle = -1 * angleDegrees;
+	//player.rotation = cocosAngle;
+	
+	float rotateSpeed = 0.1 / M_PI; // Would take 0.5 seconds to rotate 0.5 radians, or half a circle
+    float rotateDuration = fabs(angleRadians * rotateSpeed);    
+    [player runAction:[CCSequence actions:
+						[CCRotateTo actionWithDuration:rotateDuration angle:cocosAngle],
+						nil]];
+	
+	
+	projectile.position = ccp([player boundingBox].size.width, player.position.y + [player boundingBox].size.width * sin(angleRadians));
+	
 	
 	// Move projectile to actual endpoint
 	[projectile runAction:[CCSequence actions:
