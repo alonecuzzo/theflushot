@@ -171,7 +171,6 @@
     //CCSprite *playerSprite = (CCSprite *)[layer getChildByTag:kTagSpritePlayer];
 	CCSprite *playerSprite = player;
 
-	
     float destX, destY;
     BOOL shouldMove = NO;
 	
@@ -351,8 +350,25 @@
 						[CCRotateTo actionWithDuration:rotateDuration angle:cocosAngle],
 						nil]];
 	
+	float xOffset = fabs(sin(angleRadians) * 20);
+	float yOffset = -(sin(angleRadians) * 15);
 	
-	projectile.position = ccp([player boundingBox].size.width, player.position.y + [player boundingBox].size.width * sin(angleRadians));
+	float projectileX = xOffset + cos(angleRadians) * [player boundingBox].size.width;
+	float projectileY = player.position.y + yOffset + [player boundingBox].size.width * sin(angleRadians);
+	
+	printf("projectilex: %g", projectileX);
+	printf("\n");
+	printf("sin angle: %g", sin(angleRadians));
+	printf("\n");
+	printf("x offset: %g", xOffset);
+	printf("\n");
+	printf("y offset: %g", yOffset);
+	printf("\n");
+	
+	printf("\n");
+	
+	
+	projectile.position = ccp(projectileX, projectileY);
 	
 	
 	// Move projectile to actual endpoint
@@ -373,6 +389,8 @@
 	// in case you have something to dealloc, do it in this method
 	// in this particular example nothing needs to be released.
 	// cocos2d will automatically release all the children (Label)
+	//[player release];
+	//player = nil;
 	[_targets release];
 	_targets = nil;
 	[_projectiles release];
