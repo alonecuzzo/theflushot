@@ -7,6 +7,7 @@
 #import "HelloWorldScene.h"
 #import "SimpleAudioEngine.h"
 #import "GameOverScene.h"
+#import "GANTracker.h"
 
 @implementation HelloWorldScene
 @synthesize layer = _layer;
@@ -28,9 +29,35 @@
 
 @end
 
+static const NSInteger kGANDispatchPeriodSec = 2;
+static NSString *const kGANAccountId = @"UA-25747927-2";
 
 // HelloWorld implementation
 @implementation HelloWorld
+
+
+-(void)trackEnemyHit{
+    CCLOG(@"ENEMY KILLED!");
+    NSError *error;
+    if (![[GANTracker sharedTracker] setCustomVariableAtIndex:1
+                                                         name:@"Enemy Killed"
+                                                        value:@"1"
+                                                    withError:&error]) {
+        NSLog(@"error in setCustomVariableAtIndex");
+    }
+}
+
+
+-(void)trackVictory{
+    CCLOG(@"YOU WIN!");
+    NSError *error;
+    if (![[GANTracker sharedTracker] trackPageview:@"/app_victory_screen"
+                                         withError:&error]) {
+        NSLog(@"error in trackPageview");
+    }
+}
+
+
 
 -(void)spriteMoveFinished:(id)sender {
 
@@ -39,15 +66,26 @@
 	
 	if (sprite.tag == 1) { // target
 		[_targets removeObject:sprite];
-		
+        
 		//GameOverScene *gameOverScene = [GameOverScene node];
 //		[gameOverScene.layer.label setString:@"You Lose :["];
 //		[[CCDirector sharedDirector] replaceScene:gameOverScene];
 		
 	} else if (sprite.tag == 2 || sprite.tag == 3) { // projectile
-		[_projectiles removeObject:sprite];
+		[self trackEnemyHit];
+        [_projectiles removeObject:sprite];
 	}
 	
+}
+
+
+
+-(void)trackerDispatchDidComplete:(GANTracker *)tracker eventsDispatched:(NSUInteger)hitsDispatched eventsFailedDispatch:(NSUInteger)hitsFailedDispatch{
+    CCLOG(@"events dispatched: %d, events failed: %d", hitsDispatched, hitsFailedDispatch);
+}
+
+-(void)hitDispatched:(NSString *)hitString{
+    CCLOG(@"HIT DISPATCHED!!!, %@", hitString);
 }
 
 -(void)addTarget {
@@ -95,7 +133,9 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super initWithColor:ccc4(198,48,60,255)] )) {
-
+        
+        [[GANTracker sharedTracker] startTrackerWithAccountID:kGANAccountId dispatchPeriod:kGANDispatchPeriodSec delegate:self];
+        
 		// Enable touch events
 		self.isTouchEnabled = YES;
 		self.isAccelerometerEnabled = YES;
@@ -274,6 +314,7 @@
 			[self removeChild:target cleanup:YES];									
 			_projectilesDestroyed++;
 			if (_projectilesDestroyed > 30) {
+                [self trackVictory];
 				GameOverScene *gameOverScene = [GameOverScene node];
 				[gameOverScene.layer.label setString:@"You Win!"];
 				[[CCDirector sharedDirector] replaceScene:gameOverScene];
@@ -356,16 +397,16 @@
 	float projectileX = xOffset + cos(angleRadians) * [player boundingBox].size.width;
 	float projectileY = player.position.y + yOffset + [player boundingBox].size.width * sin(angleRadians);
 	
-	printf("projectilex: %g", projectileX);
-	printf("\n");
-	printf("sin angle: %g", sin(angleRadians));
-	printf("\n");
-	printf("x offset: %g", xOffset);
-	printf("\n");
-	printf("y offset: %g", yOffset);
-	printf("\n");
-	
-	printf("\n");
+//	printf("projectilex: %g", projectileX);
+//	printf("\n");
+//	printf("sin angle: %g", sin(angleRadians));
+//	printf("\n");
+//	printf("x offset: %g", xOffset);
+//	printf("\n");
+//	printf("y offset: %g", yOffset);
+//	printf("\n");
+//	
+//	printf("\n");
 	
 	
 	projectile.position = ccp(projectileX, projectileY);
@@ -395,6 +436,7 @@
 	_targets = nil;
 	[_projectiles release];
 	_projectiles = nil;
+    [[GANTracker sharedTracker] stopTracker];
 	
 	// don't forget to call "super dealloc"
 	[super dealloc];
